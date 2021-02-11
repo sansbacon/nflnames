@@ -8,51 +8,6 @@ import string
 import pandas as pd
 
 
-# df = pd.DataFrame(data['players']['player'])
-
-
-def defense_to_dst(col):
-    """Changes position column Def --> DST"""
-    return col.str.replace('Def', 'DST')
-
-
-def fix_name(row, namecol='name_'):
-    """Fixes player name to first last. Changes DST to Nickname Defense"""
-    if row.position == 'DST':
-        nickname, city = getattr(row, namecol).split(', ')
-        return f'{normalize_name(nickname)} defense'
-    parts = getattr(row, namecol).split(', ')
-    first = normalize_name(parts[1])
-    last = normalize_name(parts[0])
-    return f'{first} {last}'
-
-
-def normalize_name(s):
-    """Strips suffix and extra characters to create lowercase name"""
-    try:
-        news = s.replace('Jr.', '').replace('Sr.', '').replace('III', '').replace('II', '').strip()
-        news = ''.join([c for c in news if c not in string.punctuation])
-        news = re.sub(r'\s+(?:IV|V)\b', '', news)
-        return re.sub(r'\s+', ' ', news).lower()
-    except AttributeError:
-        return s
-
-
-def clean_mfl_players(df):
-    """Parses MFL players resources into players dataframe"""
-
-    # step one: drop unneded columns
-    wanted = ['position', 'name', 'id', 'team', 'nfl_id']
-    df = df.loc[:, wanted]
-
-    # step two: fix positions
-    df['position'] = df['position'].str.replace('Def', 'DST')
-
-    # step three: fix names
-    df['name_norm'] = df['name']
-    df['name_norm'] = df.apply(fix_name, args=('name_norm',), axis=1)
-
-
 class PlayerXref:
     @lru_cache(maxsize=None)
     def blitz_mfl_dict(self, df):

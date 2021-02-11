@@ -1,16 +1,17 @@
 # -*- coding: utf-8 -*-
-# tests/test_db.py
-from nflnames.players import normalize_name
+# tests/test_update_nflnames_data.py
+from pathlib import Path
+
+import requests
 import pandas as pd
 import pytest
 
-from nflnames import defense_to_dst, fix_name
-
+from scripts.update_nflnames_data import *
 
 def test_defense_to_dst():
     """Tests defense_to_dst"""
     col = pd.Series(['Def', 'Def', 'QB'])
-    assert defense_to_dst(col).equal(pd.Series(['DST', 'DST', 'QB']))
+    assert defense_to_dst(col).values.tolist() == ['DST', 'DST', 'QB']
 
 
 def test_normalize_name():
@@ -42,3 +43,14 @@ def test_fix_name():
     df['name_norm'] = df.apply(fix_name, args=('name_norm', ), axis=1)
     newnames = df.loc[:, 'name_norm'].values.tolist()
     assert newnames == ['jr smith', 'bills defense', 'tom brady']
+
+
+def test_update_data(test_directory):
+    url = 'https://raw.githubusercontent.com/sansbacon/nflnames-data/main/players/mfl_players.json'
+    data = requests.get(url).json()
+    df = pd.DataFrame(data['players']['player'])
+    df = clean_mfl_players(df)
+    csvpth = test_directory / 'mfl_players.csv'
+    df.to_csv(csvpth, index=False)
+    assert csvpth.is_file()
+
