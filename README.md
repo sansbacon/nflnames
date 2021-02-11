@@ -1,2 +1,2 @@
 # nflnames
-python library for matching and managing nfl player and team names
+python library for standardizing NFL team and player names
