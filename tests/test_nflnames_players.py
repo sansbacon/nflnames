@@ -1,13 +1,52 @@
+# nflnames/tests/test_nflnames_players.py
 # -*- coding: utf-8 -*-
-# tests/test_update_nflnames_data.py
-from pathlib import Path
+# Copyright (C) 2020 Eric Truett
+# Licensed under the MIT License
 
-import requests
-import pandas as pd
+from nflnames import *
 import pytest
 
-from scripts.update_nflnames_data import *
 
+def test_rearrange_name():
+    """Tests rearrange_name"""
+    s = 'Beckham Jr., Odell'
+    assert rearrange_name(s) == 'Odell Beckham Jr.'
+
+
+def test_remove_chars():
+    """Tests remove_chars"""
+    s = 'Odell Beckham Jr.'
+    assert remove_chars(s) == 'Odell Beckham Jr'
+    s = "Le'Veon Bell"
+    assert remove_chars(s) == 'LeVeon Bell'
+
+
+def test_remove_suffixes():
+    """Tests remove_suffixes"""
+    s = 'Odell Beckham, Jr.'
+    assert remove_suffixes(s) == 'Odell Beckham, Jr.'
+    assert remove_suffixes(remove_chars(s)) == 'Odell Beckham'
+
+
+def test_standardize_defense_name():
+    #(s: str) -> str:
+    #"""Standardizes DST name
+    s = "San Francisco 49ers"
+    assert standardize_defense_name(s) == 'san francisco defense'
+
+
+def test_standardize_player_name():
+    s = 'Henry Ruggs IV'
+    assert standardize_player_name(s) == 'henry ruggs'
+
+
+def test_standardize_positions():
+    for s in ('DST', 'Defense', 'def'):
+        assert standardize_positions(s) == 'DST'
+    assert standardize_positions('qb') == 'qb'
+
+
+'''
 def test_defense_to_dst():
     """Tests defense_to_dst"""
     col = pd.Series(['Def', 'Def', 'QB'])
@@ -54,3 +93,4 @@ def test_update_data(test_directory):
     df.to_csv(csvpth, index=False)
     assert csvpth.is_file()
 
+'''

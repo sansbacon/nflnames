@@ -1,4 +1,7 @@
-
+# nflnames/nflnames/players.py
+# -*- coding: utf-8 -*-
+# Copyright (C) 2020 Eric Truett
+# Licensed under the MIT License
 
 from functools import lru_cache
 from pathlib import Path
@@ -8,34 +11,73 @@ import string
 import pandas as pd
 
 
-class PlayerXref:
-    @lru_cache(maxsize=None)
-    def blitz_mfl_dict(self, df):
-        """Creates dict of blitz_id: mfl_id"""
-        return {k: v for k, v in zip(df['rg_player_id'], df['mfl_player_id'])}
-
-    @lru_cache(maxsize=None)
-    def load_blitz_mfl_xref(self):
-        """Loads xref file for matching players
-        
-        Returns DataFrame with columns
-        rg_player_id, rg_player_name, pos, team  
-        mfl_player_id, mfl_player_name
-        """
-        fn = Path(__file__).parent / 'rg_mfl_xref.csv'
-        return pd.read_csv(fn)
-
-    def merge_blitz_ffa(self, blitzdf, ffadf):
-        """Merges blitz and ffa projections. Use blitz as left join - has salaries"""
-        d = self.mfl_blitz_dict(self.load_blitz_mfl_xref())
-        ffadf['playerid'] = ffadf['id'].map(d)
-        return d.join(ffadf, on='playerid', rsuffix='_ffa')
-
-    @lru_cache(maxsize=None)
-    def mfl_blitz_dict(self, df):
-        """Creates dict of mfl_id: blitz_id"""
-        return {k: v for k, v in zip(df['mfl_player_id'], df['rg_player_id'])}
+LEGAL_CHARS = re.compile(r'\W')
+SUFFIXES = {'II', 'The Second', 'III', 'The Third', 'IV', 'The Fourth', 'Jr', 'Junior', 'Sr', 'Senior', 'Esq', 'JD', 'MD', 'PhD'}
+LOWER_SUFFIXES = set([s.lower() for s in SUFFIXES])
 
 
-if __name__ == '__main__':
-    pass
+def rearrange_name(s: str) -> str:
+    """Converts last, first to first last
+    
+    Args:
+        s (str): the original string
+
+    Returns:
+        str: the standardized string
+    
+    """
+    return ' '.join(reversed([i.strip() for i in s.split(', ')]))
+
+
+def remove_chars(s, keep=LEGAL_CHARS):
+    """Removes all but legal characters from string"""
+    return ' '.join([re.sub(keep, '', i) for i in s.split()])
+
+
+def remove_suffixes(s, remove=LOWER_SUFFIXES):
+    """Removes suffixes from string"""
+    s = s.split()
+    if s[-1].lower() in remove:
+        s = s[:-1]
+    return ' '.join(s)
+
+
+def standardize_defense_name(s: str) -> str:
+    """Standardizes DST name
+    
+    Args:
+        s (str): the original string
+
+    Returns:
+        str: the standardized string
+
+    """   
+    return ' '.join(standardize_player_name(s).split()[:-1]) + ' defense'
+
+
+def standardize_player_name(s: str) -> str:
+    """Standardizes player name
+    
+    Args:
+        s (str): the original string
+
+    Returns:
+        str: the standardized string
+
+    """
+    return re.sub(r'\s+', ' ' , remove_suffixes(remove_chars(s))).lower()
+
+
+def standardize_positions(s: str) -> str:
+    """Standardizes position names
+    
+    Args:
+        s (str): the position string
+
+    Returns:
+        str: the standardized string
+
+    """
+    mapping = {'Def': 'DST', 'Defense': 'DST', 'DEF': 'DST', 'def': 'DST', 'dst': 'DST'}
+    std = mapping[s] if s in mapping else s
+    return std

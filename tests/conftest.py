@@ -1,3 +1,8 @@
+# nflnames/tests/conftest.py
+# -*- coding: utf-8 -*-
+# Copyright (C) 2020 Eric Truett
+# Licensed under the MIT License
+
 from pathlib import Path
 import sys
 

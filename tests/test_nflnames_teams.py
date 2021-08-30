@@ -1,3 +1,9 @@
+# nflnames/tests/test_nflnames_teams.py
+# -*- coding: utf-8 -*-
+# Copyright (C) 2020 Eric Truett
+# Licensed under the MIT License
+
+
 import random
 import pytest
 
@@ -51,9 +57,10 @@ def test_standardize_team_code():
     assert is_standardized({tcs})
     
 
-def test_standardize_team_name():
+def test_standardize_team_name(tprint):
     tn = 'Texans'
     assert not is_standardized({tn})
     stn = standardize_team_name(tn)
-    assert is_standardized({stn})
+    tprint(stn)
+    assert is_standardized({stn}, team_type='name')
 

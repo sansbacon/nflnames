@@ -1,6 +1,9 @@
-"""
-nflnames.teams
+# nflnames/nflnames/teams.py
+# -*- coding: utf-8 -*-
+# Copyright (C) 2020 Eric Truett
+# Licensed under the MIT License
 
+"""
 Converts various team name formats to standard format
 Different sites use different names for the same NFL teams
 
@@ -114,11 +117,11 @@ def _standardize(item: str, mapping: dict) -> List[Tuple[str, str]]:
            ]
 
 
-def is_standardized(teams: List[str], team_type: str = 'code') -> bool:
+def is_standardized(teams: Set[str], team_type: str = 'code') -> bool:
     """Tests if team codes are standardized
     
     Args:
-        teams (List[str]): the list of codes / names to standardize
+        teams (Set[str]): the list of codes / names to standardize
         team_type (str): default 'code', can also be 'name'
 
     Returns:
