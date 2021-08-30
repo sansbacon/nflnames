@@ -4,10 +4,20 @@ nflnames.teams
 Converts various team name formats to standard format
 Different sites use different names for the same NFL teams
 
+Examples:
+
+teams = ['JAX', 'kcc', 'gbp']
+>>>is_standardized(teams)
+False
+
+>>>standardize_team_codes(teams)
+['JAC', 'KC', 'GB']
+
 """
 import logging
+from typing import Dict, List, Set, Tuple
 
-logger = logging.getLogger(__name__)
+logging.getLogger(__file__).addHandler(logging.NullHandler())
 
 
 TEAM_CODES = {
@@ -45,6 +55,7 @@ TEAM_CODES = {
   'WAS': ['WFT', 'Washington Redskins', 'Redskins', 'Washington', 'was', 'Football Team', 'Washington Football Team']
 }
 
+
 TEAM_NAMES = {
   'Arizona Cardinals': ['ARI', 'Cardinals', 'Arizona', 'crd'],
   'Atlanta Falcons': ['ATL', 'Falcons', 'Atlanta', 'atl'],
@@ -81,8 +92,17 @@ TEAM_NAMES = {
 }
 
 
-def _standardize(item, mapping):
-    """Standardizes item from mapping"""
+def _standardize(item: str, mapping: dict) -> List[Tuple[str, str]]:
+    """Standardizes item from mapping
+    
+    Args:
+        item (str): the item to match
+        mapping (dict): the item mapping
+
+    Returns:
+        List[Tuple[str, str]]
+
+    """
     if item in mapping:
         return [(item, item)]
     return [(k, v) for k, v in mapping.items()
@@ -92,9 +112,51 @@ def _standardize(item, mapping):
                    item.upper() in k or
                    item.upper() in v)
            ]
+
+
+def is_standardized(teams: List[str], team_type: str = 'code') -> bool:
+    """Tests if team codes are standardized
     
+    Args:
+        teams (List[str]): the list of codes / names to standardize
+        team_type (str): default 'code', can also be 'name'
+
+    Returns:
+        bool
+
+    """
+    if team_type == 'code':    
+        return teams.issubset(standard_team_codes())
+    return teams.issubset(standard_team_names())
+
+
+def standard_team_codes() -> Set[str]:
+    """Set of the standardized team codes
     
-def standardize_team_code(team):
+    Args:
+        None
+
+    Returns:
+        Set[str]
+
+    """
+    return set(TEAM_CODES.keys())
+
+    
+def standard_team_names()-> Set[str]:
+    """Set of the standardized team names
+    
+    Args:
+        None
+
+    Returns:
+        Set[str]
+
+    """
+    return set(TEAM_NAMES.keys())
+
+    
+def standardize_team_code(team: str) -> str:
     """Standardizes team code across sites
 
     Args:
@@ -118,7 +180,7 @@ def standardize_team_code(team):
     return matches[0][0]
 
 
-def standardize_team_name(team):
+def standardize_team_name(team: str) -> str:
     """Standardizes team name across sites
 
     Args:
@@ -126,6 +188,7 @@ def standardize_team_name(team):
 
     Returns:
         str: team name, Atlanta Falcons, Baltimore Ravens, etc.
+
     """
     matches = _standardize(team, TEAM_NAMES)
     if not matches:
@@ -134,6 +197,3 @@ def standardize_team_name(team):
         raise ValueError(f'too many matches for {team}:\n{matches}')    
     return matches[0][0]
 
-
-if __name__ == '__main__':
-    pass
