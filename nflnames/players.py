@@ -1,30 +1,11 @@
-# players.py
+
+
 from functools import lru_cache
+from pathlib import Path
+import re
+import string
 
-
-def mfl_players(since=''):
-
-    """Gets MFL players list"""
-    params = {
-      'TYPE': 'players',
-      'L': '',
-      'APIKEY': '',
-      'DETAILS': 1,
-      'SINCE': since,
-      'PLAYERS': '',
-      'JSON': 1
-    }
-    url = 'https://api.myfantasyleague.com/2020/export?'
-    mflp = requests.get(url, params).json()
-    return pd.DataFrame(mflp['players']['player'])
-
-   
-
-def normalize_name(s):
-    """Strips suffix and extra characters to create lowercase name"""
-    news = s.replace('Jr.', '').replace('Sr.', '').replace('III', '').replace('II', '').strip()
-    news = ''.join([c for c in news if c not in string.punctuation])
-    return news.lower()
+import pandas as pd
 
 
 class PlayerXref:
@@ -43,7 +24,6 @@ class PlayerXref:
         """
         fn = Path(__file__).parent / 'rg_mfl_xref.csv'
         return pd.read_csv(fn)
-
 
     def merge_blitz_ffa(self, blitzdf, ffadf):
         """Merges blitz and ffa projections. Use blitz as left join - has salaries"""
