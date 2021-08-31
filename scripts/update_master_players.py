@@ -35,5 +35,14 @@ wanted = ['id', 'name', 'first_last', 'standard_name', 'position', 'team', 'draf
           'stats_id', 'sportsdata_id', 'espn_id', 'cbs_id', 'nfl_id']
 df = df.loc[:, wanted]
 
+# rename columns
+remap = {
+  'id': 'mfl_id',
+  'name': 'mfl_name',
+  'position': 'pos',
+}
+
+df = df.rename(columns=remap)
+
 # write to disk
 df.to_csv('/home/sansbacon/workspace/nflnames/nflnames/data/master_players.csv', index=False)

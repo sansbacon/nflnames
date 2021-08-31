@@ -1,4 +1,4 @@
-id,name,first_last,standard_name,position,team,draft_year,college,stats_id,sportsdata_id,espn_id,cbs_id,nfl_id
+mfl_id,mfl_name,first_last,standard_name,pos,team,draft_year,college,stats_id,sportsdata_id,espn_id,cbs_id,nfl_id
 0501,"Bills, Buffalo",Buffalo Bills,bills defense,DST,BUF,1970,,2,,,409,
 0502,"Colts, Indianapolis",Indianapolis Colts,colts defense,DST,IND,1970,,11,,,402,
 0503,"Dolphins, Miami",Miami Dolphins,dolphins defense,DST,MIA,1970,,15,,,404,
@@ -31,12 +31,10 @@ id,name,first_last,standard_name,position,team,draft_year,college,stats_id,sport
 0530,"49ers, San Francisco",San Francisco 49ers,49ers defense,DST,SF,1970,,25,,,415,
 0531,"Ravens, Baltimore",Baltimore Ravens,ravens defense,DST,BAL,1970,,33,,,425,
 0532,"Texans, Houston",Houston Texans,texans defense,DST,HOU,1970,,34,,,432,
-2842,"Vinatieri, Adam",Adam Vinatieri,adam vinatieri,PK,FA,1996,South Dakota State,3727,9ecf8040-10f9-4a5c-92da-1b4d77bd6760,1097,1392,adamvinatieri/2503471
 4397,"Nix, Roosevelt",Roosevelt Nix,roosevelt nix,RB,FA,2014,Kent State,28068,f611f87a-1e49-4196-9088-8c760f26006d,17223,2130101,rooseveltnix/2550235
 4925,"Brees, Drew",Drew Brees,drew brees,QB,NO,2001,Purdue,5479,bb5957e6-ce7d-47ab-8036-22191ffc1c44,2580,235197,drewbrees/2504775
 5848,"Brady, Tom",Tom Brady,tom brady,QB,TB,2000,Michigan,5228,41c44740-d0f6-44ab-8347-3b5d515e5ecf,2330,187741,tombrady/2504211
 6589,"McCown, Josh",Josh McCown,josh mccown,QB,HOU,2002,Sam Houston State,5967,a261fd0a-b096-4db7-bd51-2f13bde485da,3609,302085,joshmccown/2505076
-6789,"Bryant, Matt",Matt Bryant,matt bryant,PK,FA,2002,Baylor,6243,218d1644-603e-4da3-9ce1-48ce3927494f,4333,312308,mattbryant/2504797
 6997,"Witten, Jason",Jason Witten,jason witten,TE,FA,2003,Tennessee,6405,e38c9b1b-7c51-48a2-ac1d-a752502e8930,4527,396134,jasonwitten/2505629
 7391,"Manning, Eli",Eli Manning,eli manning,QB,FA,2004,Mississippi,6760,6cb6226e-f08c-4192-95f1-69709ed686c6,5526,493004,elimanning/2505996
 7393,"Fitzgerald, Larry",Larry Fitzgerald,larry fitzgerald,WR,ARI,2004,Pittsburgh,6762,b6a61b38-5cfa-46eb-b1c5-b0255d7ebaf5,5528,492934,larryfitzgerald/2506106
@@ -46,23 +44,17 @@ id,name,first_last,standard_name,position,team,draft_year,college,stats_id,sport
 7480,"Schaub, Matt",Matt Schaub,matt schaub,QB,FA,2004,Virginia,6849,1f09583f-dcc1-43e8-a7fc-f063d2c96508,5615,493050,mattschaub/2505982
 7813,"Smith, Alex",Alex Smith,alex smith,QB,WAS,2005,Utah,7177,2fda010a-8c62-4c07-b601-4ba03f57e6af,8416,552642,alexsmith/2506340
 7836,"Rodgers, Aaron",Aaron Rodgers,aaron rodgers,QB,GB,2005,California,7200,0ce48193-e2fa-466e-a986-33f751add206,8439,419780,aaronrodgers/2506363
-7859,"Nugent, Mike",Mike Nugent,mike nugent,PK,ARI,2005,Ohio State,7223,e017e12b-07a7-4a35-b837-2faa9ffe3ce8,8461,552599,mikenugent/2506386
 7877,"Gore, Frank",Frank Gore,frank gore,RB,NYJ,2005,Miami (Fla.),7241,6a2b129d-a9e5-4131-b491-82269b323f77,8479,411568,frankgore/2506404
 7942,"Sproles, Darren",Darren Sproles,darren sproles,RB,FA,2005,Kansas State,7306,15b156b5-30cc-4070-b60a-1c09e62c5a9b,8544,421419,darrensproles/2506467
 8062,"Fitzpatrick, Ryan",Ryan Fitzpatrick,ryan fitzpatrick,QB,MIA,2005,Harvard,7426,0742d2ea-1cf2-49a6-a150-77ba6e034d8c,8664,547043,ryanfitzpatrick/2506581
-8153,"Gould, Robbie",Robbie Gould,robbie gould,PK,SF,2005,Penn State,7520,abd73d50-ce60-47f1-b37f-2f9a05b0d7b9,9354,553121,robbiegould/2506264
 8247,"Davis, Vernon",Vernon Davis,vernon davis,TE,FA,2006,Maryland,7755,0a95e792-6455-4927-9539-f95fa7f41fbb,9592,409254,vernondavis/2495826
 8269,"Lewis, Marcedes",Marcedes Lewis,marcedes lewis,TE,GB,2006,UCLA,7777,9c21e9af-681c-41ef-9b00-fbc9e1668ed1,9614,415313,marcedeslewis/2495888
-8359,"Gostkowski, Stephen",Stephen Gostkowski,stephen gostkowski,PK,TEN,2006,Memphis,7867,a527b7db-0b52-4379-9e4c-2e08c1fe1bed,9704,411579,stephengostkowski/2506922
 8416,"Walker, Delanie",Delanie Walker,delanie walker,TE,FA,2006,Central Missouri Sta,7924,ccce5e8e-52ca-4f0f-a40f-fe5e7227d156,9761,1109396,delaniewalker/2495966
 8658,"Peterson, Adrian",Adrian Peterson,adrian peterson,RB,DET,2007,Oklahoma,8261,ab58c0ac-a747-47e6-9b3c-505e41d2bd3d,10452,517568,adrianpeterson/2507164
 8670,"Lynch, Marshawn",Marshawn Lynch,marshawn lynch,RB,FA,2007,California,8266,82bce0be-9a87-4b6d-a85b-623bf8d1674e,10456,504639,marshawnlynch/2495663
 8673,"Ginn Jr., Ted",Ted Ginn Jr.,ted ginn,WR,FA,2007,Ohio State,8263,3aef6950-1c19-4454-a3d0-0afe9634ea9f,10453,502737,tedginn/2507166
 8687,"Olsen, Greg",Greg Olsen,greg olsen,TE,FA,2007,Miami (Fla.),8285,587d0a98-7ec5-45a5-adba-8af26e8f256b,10475,502524,gregolsen/2495700
 8712,"Stanton, Drew",Drew Stanton,drew stanton,QB,FA,2007,Michigan State,8297,22fb2b54-4936-4e8a-a48d-62096c0c9bb1,10487,421487,drewstanton/2495748
-8742,"Crosby, Mason",Mason Crosby,mason crosby,PK,GB,2007,Colorado,8447,e0856548-6fd5-4f83-9aa0-91f1bf4cbbd8,10636,408969,masoncrosby/2507232
-8851,"Folk, Nick",Nick Folk,nick folk,PK,NE,2007,Arizona,8432,b37c621e-1125-4c35-bea0-fcabb1527060,10621,410721,nickfolk/2507225
-8930,"Prater, Matt",Matt Prater,matt prater,PK,DET,2006,Central Florida,8565,67f5e782-f91c-4536-9818-cf4a0e7e821d,11122,1109832,mattprater/2506677
 8944,"Moore, Matt",Matt Moore,matt moore,QB,KC,2007,Oregon State,8544,76d7615e-8eb5-4761-b6a6-1e895d01baf3,11128,1226278,mattmoore/2507282
 9064,"Flacco, Joe",Joe Flacco,joe flacco,QB,NYJ,2008,Delaware,8795,64797df2-efd3-4b27-86ee-1d48f7edb09f,11252,1250697,JoeFlacco
 9073,"Henne, Chad",Chad Henne,chad henne,QB,KC,2008,Michigan,8834,f55053e4-4bfd-495d-981a-d62e3662f01b,11291,517291,chadhenne/252
@@ -71,7 +63,6 @@ id,name,first_last,standard_name,position,team,draft_year,college,stats_id,sport
 9200,"Slater, Matt",Matt Slater,matt slater,WR,NE,2008,UCLA,8930,9d404288-65c5-414f-8ea5-ceb97eccaea0,11387,1615610,mattslater/4487
 9250,"Garcon, Pierre",Pierre Garcon,pierre garcon,WR,FA,2008,Mount Union,8982,a824d9ff-12a4-4ed2-812d-404b0b4e52f9,11439,583087,pierregarcon/2346
 9308,"Amendola, Danny",Danny Amendola,danny amendola,WR,DET,2008,Texas Tech,9037,973bfe3c-6d0d-4130-a79c-f860650b1da6,11674,516968,dannyamendola/2649
-9319,"Hauschka, Steven",Steven Hauschka,steven hauschka,PK,FA,2008,North Carolina State,9066,40cda44b-2ee3-4ad1-834e-995e30db84d4,11923,1616746,stevenhauschka/2507374
 9427,"Crabtree, Michael",Michael Crabtree,michael crabtree,WR,FA,2009,Texas Tech,9274,fe767946-236d-4c04-9c59-5e3edd51acfe,12563,1125838,michaelcrabtree/71269
 9431,"Stafford, Matthew",Matthew Stafford,matthew stafford,QB,LAR,2009,Georgia,9265,ade43b1a-0601-4672-83b6-d246bc066a19,12483,1114942,matthewstafford/79860
 9441,"Harvin, Percy",Percy Harvin,percy harvin,WR,FA,2009,Florida,9286,3752af7b-f40d-4f82-8072-4fb84d15090d,12569,1114598,percyharvin/80425
@@ -79,8 +70,6 @@ id,name,first_last,standard_name,position,team,draft_year,college,stats_id,sport
 9474,"Cook, Jared",Jared Cook,jared cook,TE,NO,2009,South Carolina,9353,3b7a1409-d154-4e5c-8c94-9d4a0e0993c7,12537,584314,jaredcook/71265
 9525,"Wallace, Mike",Mike Wallace,mike wallace,WR,FA,2009,Mississippi,9348,b37b5be9-4771-4368-988f-fb936f4fc0ad,12601,559250,mikewallace/2507763
 9662,"Edelman, Julian",Julian Edelman,julian edelman,WR,NE,2009,Kent State,9496,2bb70d56-a79a-4fa1-ae37-99858a3ffd55,12649,1674116,julianedelman/238498
-9686,"Succop, Ryan",Ryan Succop,ryan succop,PK,TB,2009,South Carolina,9520,ecc4f0c1-64e0-46cc-9b58-91c2b215e62a,12731,1674148,ryansuccop/89802
-9694,"Gano, Graham",Graham Gano,graham gano,PK,NYG,2009,Florida State,9526,63f8a401-f308-4463-9d0b-4335b98da682,12460,558839,grahamgano/71309
 9706,"Daniel, Chase",Chase Daniel,chase daniel,QB,DET,2009,Missouri,9678,0045a36c-f464-49e0-a25a-9210edc94bc1,12471,565754,chasedaniel/81284
 9714,"Hoyer, Brian",Brian Hoyer,brian hoyer,QB,NE,2009,Michigan State,9547,af4ba620-2f00-4b00-9111-7897f2b1cde8,12477,517243,brianhoyer/81294
 9817,"Bradford, Sam",Sam Bradford,sam bradford,QB,FA,2010,Oklahoma,23976,cc3640b0-7560-431f-84ab-599e9dc8cac6,13197,1123599,sambradford/497095
@@ -121,9 +110,7 @@ id,name,first_last,standard_name,position,team,draft_year,college,stats_id,sport
 10413,"Taylor, Tyrod",Tyrod Taylor,tyrod taylor,QB,LAC,2011,Virginia Tech,24967,7f3ef024-eb34-46af-8b9e-544cdf09378f,14163,1243338,tyrodtaylor/2495240
 10432,"Green, Virgil",Virgil Green,virgil green,TE,LAC,2011,Nevada,24991,6ef43c53-53d7-4b0f-ad99-17664d663ae8,14085,1130615,virgilgreen/2495288
 10437,"Miller, Bruce",Bruce Miller,bruce miller,TE,FA,2011,Central Florida,24998,9be8224a-4a19-4f6a-a2be-ecbd3a24868c,14083,1114232,brucemiller/2495314
-10487,"Forbath, Kai",Kai Forbath,kai forbath,PK,FA,2011,UCLA,25648,5514afb6-bd43-49a8-9bf7-b8baaaecdabe,14816,1117835,kaiforbath/2495150
 10500,"Pryor, Terrelle",Terrelle Pryor,terrelle pryor,WR,FA,2011,Ohio State,25681,af48c3f0-040b-40f9-95ab-6ebcb4c16cf8,14851,1631107,terrellepryor/2531332
-10506,"Bailey, Dan",Dan Bailey,dan bailey,PK,MIN,2011,Oklahoma State,25427,beb64618-614c-49f7-a3aa-c0c75b7839ea,14322,1689664,danbailey/2495259
 10514,"Bellore, Nick",Nick Bellore,nick bellore,RB,SEA,2011,Central Michigan,25295,eeb9e3f4-e378-44ca-94b6-a724011ad710,14471,1244136,nickbellore/2495262
 10695,"Luck, Andrew",Andrew Luck,andrew luck,QB,FA,2012,Stanford,25711,e3181493-6a2a-4e95-aa6f-3fc1ddeb7512,14874,1631912,andrewluck/2533031
 10696,"Griffin III, Robert",Robert Griffin III,robert griffin,QB,BAL,2012,Baylor,25712,8dfb370d-460c-4bfc-9d62-888687248783,14875,1620788,robertgriffiniii/2533033
@@ -143,8 +130,6 @@ id,name,first_last,standard_name,position,team,draft_year,college,stats_id,sport
 10738,"Jones, Marvin",Marvin Jones,marvin jones,WR,DET,2012,California,25876,1a2fbc23-e6db-4d2f-a152-2c774341b7c4,15072,1631804,marvinjones/2532884
 10742,"Allen, Dwayne",Dwayne Allen,dwayne allen,TE,FA,2012,Clemson,25774,cc745cc3-d52a-454b-98c8-ac9155a9405c,14901,1630216,dwayneallen/2533046
 10838,"Ellison, Rhett",Rhett Ellison,rhett ellison,TE,FA,2012,USC,25838,cccc9f16-9508-434f-b7a4-9a29cb0cacf9,15003,1244464,rhettellison/2532835
-10862,"Bullock, Randy",Randy Bullock,randy bullock,PK,CIN,2012,Texas A&M,25871,c7d8781f-b9f6-4e0f-b0b6-29fce3985f3e,15091,1632503,randybullock/2533444
-10868,"Zuerlein, Greg",Greg Zuerlein,greg zuerlein,PK,DAL,2012,Missouri Western,25881,93d11276-45d2-4168-a9b7-df0cbf12dabb,14993,1971893,gregzuerlein/2534797
 10870,"Morris, Alfred",Alfred Morris,alfred morris,RB,NYG,2012,Florida Atlantic,25883,bd10efdf-d8e7-4e23-ab1a-1e42fb65131b,15009,1254119,alfredmorris/2533457
 10932,"Bolden, Brandon",Brandon Bolden,brandon bolden,RB,NE,2012,Mississippi,26389,dba5e3ec-2c77-4f65-ad6e-cee246f816ef,15478,1632301,brandonbolden/2532797
 10935,"Tanney, Alex",Alex Tanney,alex tanney,QB,NYG,2012,Monmouth,26547,1c6daf8e-d6dc-4d88-a5fa-c3ebcd93a6e5,15693,1987619,alextanney/2534870
@@ -153,7 +138,6 @@ id,name,first_last,standard_name,position,team,draft_year,college,stats_id,sport
 10956,"Thompson, Deonte",Deonte Thompson,deonte thompson,WR,FA,2012,Florida,26456,c323cdb9-74bc-4d68-9358-609f80eedbb7,15503,1979421,deontethompson/2534436
 10960,"Gordon, Josh",Josh Gordon,josh gordon,WR,SEA,2012,Baylor,26561,b228c353-bb1f-4ba8-aa6d-d18ecf297259,15705,1686045,joshgordon/2537931
 10973,"Beasley, Cole",Cole Beasley,cole beasley,WR,BUF,2012,Southern Methodist,26060,7092bb09-a161-4ab9-8d19-fdcf1a91bb3d,15349,1977145,colebeasley/2535698
-10976,"Tucker, Justin",Justin Tucker,justin tucker,PK,BAL,2012,Texas,26534,20a0bad2-d530-4ff4-a2df-5c0a21a1f5db,15683,1985374,justintucker/2536340
 10983,"Hogan, Chris",Chris Hogan,chris hogan,WR,FA,2011,Monmouth,25178,8fc65820-f565-44e2-8635-3e1cdf165bf6,14402,1891917,chrishogan/2530515
 10985,"Olawale, Jamize",Jamize Olawale,jamize olawale,RB,DAL,2012,North Texas,26535,5a20a439-bebc-4ef7-8b9f-30e1d677a26b,15653,1979720,jamizeolawale/2536044
 11007,"Celek, Garrett",Garrett Celek,garrett celek,TE,FA,2012,Michigan State,26253,16cc9ade-f9ad-4d32-b5b9-d7568ee80f58,15204,1975891,garrettcelek/2534820
@@ -192,10 +176,8 @@ id,name,first_last,standard_name,position,team,draft_year,college,stats_id,sport
 11252,"Toilolo, Levine",Levine Toilolo,levine toilolo,TE,NYG,2013,Stanford,26756,67d56171-7522-430c-b7d9-8f7e2b6624d3,15980,1685990,levinetoilolo/2540203
 11257,"McDonald, Vance",Vance McDonald,vance mcdonald,TE,FA,2013,Rice,26678,8f24a248-b328-43ec-8677-67600e42a8f7,15853,1673357,vancemcdonald/2540215
 11337,"Fells, Darren",Darren Fells,darren fells,TE,HOU,2012,UC Irvine,26612,54d4e35a-2e6c-48f6-86ad-92dd596c173c,15773,2053740,darrenfells/2540928
-11339,"Tavecchio, Giorgio",Giorgio Tavecchio,giorgio tavecchio,PK,FA,2012,California,26264,be449b4d-799c-4045-8e9e-e8a7fd7c2cc8,15245,1975894,giorgiotavecchio/2535686
 11367,"Juszczyk, Kyle",Kyle Juszczyk,kyle juszczyk,RB,SF,2013,Harvard,26753,67da5b5c-0db9-4fbc-b98d-7eb8e97b69f6,16002,1683145,kylejuszczyk/2540230
 11381,"Willson, Luke",Luke Willson,luke willson,TE,SEA,2013,Rice,26781,16c67c97-ffd9-4f92-917d-ad6124ce1f6e,16121,2057661,lukewillson/2541199
-11387,"Hopkins, Dustin",Dustin Hopkins,dustin hopkins,PK,WAS,2013,Florida State,26800,058c99fc-470c-4579-a165-03e043335cc1,15965,1664151,dustinhopkins/2539227
 11390,"Murray, Latavius",Latavius Murray,latavius murray,RB,NO,2013,Central Florida,26804,540f8b30-900e-4d17-8756-c262ba5fa039,15920,1637004,lataviusmurray/2541161
 11399,"Griffin, Ryan",Ryan Griffin,ryan griffin,TE,NYJ,2013,Connecticut,26824,cb1df42c-b59c-4e23-a9a2-fbfc2b39ef71,15887,2057695,ryangriffin/2541316
 11406,"Butler, Brice",Brice Butler,brice butler,WR,FA,2013,San Diego St,26832,26b9c11d-c557-4bef-b990-65498858df47,15896,2057699,bricebutler/2541388
@@ -251,15 +233,10 @@ id,name,first_last,standard_name,position,team,draft_year,college,stats_id,sport
 11894,"Fluellen, David",David Fluellen,david fluellen,RB,FA,2014,Toledo,27790,481da4a3-fb29-4480-9db4-9cffdf33f510,16994,2130224,davidfluellen/2550289
 11925,"Hurns, Allen",Allen Hurns,allen hurns,WR,MIA,2014,Miami,27874,10952a8e-9da1-447b-a016-c699db00c5f0,17177,2130337,allenhurns/2550353
 11931,"Fowler, Bennie",Bennie Fowler,bennie fowler,WR,NO,2014,Michigan State,27826,132721b4-fd32-4795-b214-ab4baaaceb3a,16995,2130161,benniefowler/2550198
-11936,"Boswell, Chris",Chris Boswell,chris boswell,PK,PIT,2014,Rice,28188,441eb531-1ec8-4f65-9174-78bc6adada63,,1724930,chrisboswell/2550545
 11938,"Thielen, Adam",Adam Thielen,adam thielen,WR,MIN,2014,Minnesota State-Mankato,27277,2fa2b2da-4aa9-44b5-b27e-56876dfe2ad4,16460,2059362,
-11945,"Santos, Cairo",Cairo Santos,cairo santos,PK,CHI,2014,Tulane,28227,d96ff17c-841a-4768-8e08-3a4cfcb7f717,17427,2132690,cairosantos/2550636
-11947,"McManus, Brandon",Brandon McManus,brandon mcmanus,PK,DEN,2014,Temple,27120,6444feb1-f5a4-4b45-9a45-79308a4445fd,16339,2058320,brandonmcmanus/2541556
 11951,"Snead, Willie",Willie Snead,willie snead,WR,BAL,2014,Ball State,28026,8482bc94-0eb0-4e92-8f99-ced135f3cd5d,17258,2130155,
 11957,"Inman, Dontrelle",Dontrelle Inman,dontrelle inman,WR,WAS,2013,Virginia,25120,61194d09-1caf-4bd6-9ff2-a6b1601a1839,14269,1272256,dontrelleinman/2530700
-11960,"Catanzaro, Chandler",Chandler Catanzaro,chandler catanzaro,PK,FA,2014,Clemson,28103,0d1171d4-c955-4966-9257-640b569866d1,16976,2130276,chandlercatanzaro/2550325
 11964,"Perry, Senorise",Senorise Perry,senorise perry,RB,TEN,2014,Louisville,28223,3d94860c-82db-43fd-aa99-3b72390111a4,17421,2132668,senoriseperry/2550633
-11966,"Parkey, Cody",Cody Parkey,cody parkey,PK,CLE,2014,Auburn,27911,4b99ead5-0f79-4899-84a7-075c08890698,17082,2130323,codyparkey/2550380
 11975,"Gabriel, Taylor",Taylor Gabriel,taylor gabriel,WR,FA,2014,Abilene Christian,28234,4b3677f5-712e-43f2-b7bb-51ac6f291b86,17437,2132670,taylorgabriel/2550617
 12040,"Smith, Keith",Keith Smith,keith smith,RB,ATL,2014,San Jose State,28141,955093e0-39aa-48b4-b34d-259b369e6535,17315,2130290,keithsmith/2550400
 12098,"West, Charcandrick",Charcandrick West,charcandrick west,RB,FA,2014,Abilene Christian,28044,65f91b8b-6794-4273-bf42-4d00b5973ddd,17284,2130200,charcandrickwest/2550268
@@ -320,9 +297,7 @@ id,name,first_last,standard_name,position,team,draft_year,college,stats_id,sport
 12391,"Williams, Tyrell",Tyrell Williams,tyrell williams,WR,LVR,2015,Western Oregon,28691,a6fe5f18-d78d-4a56-aea2-ef4bed7e647a,2587819,2175352,tyrellwilliams/2553913
 12394,"Carter, DeAndre",DeAndre Carter,deandre carter,WR,CHI,2015,Sacramento State,28947,9ae2584a-40c1-4b30-be34-a9567659eacd,2580216,2174795,deandrecarter/2553502
 12402,"Grant, Corey",Corey Grant,corey grant,RB,FA,2015,Auburn,28847,af944a80-eba7-479d-b3b1-73279abdc67a,2515934,2174896,coreygrant/2553650
-12417,"Lambo, Josh",Josh Lambo,josh lambo,PK,JAC,2015,Texas A&M,28685,69bdf41e-3c32-46c1-93b8-e952edf5c61d,2998120,2013049,joshlambo/2553833
 12429,"White, DeAndrew",DeAndrew White,deandrew white,WR,BAL,2015,Alabama,28800,e0abf267-f265-4682-9bb7-72bbcefda451,2515962,1737194,
-12437,"Myers, Jason",Jason Myers,jason myers,PK,SEA,2014,Marist,28378,7af4c94b-529b-4403-ab66-2bfed3fcf0c7,2473037,2169640,
 12443,"Kumerow, Jake",Jake Kumerow,jake kumerow,WR,BUF,2017,Wisconsin-Whitewater,28974,aa759477-6206-4984-ab9c-eb213abfd020,3085107,2174839,jakekumerow/2553548
 12444,"Smith, Rod",Rod Smith,rod smith,RB,FA,2015,Ohio State,28718,37339e36-741c-4c1c-a9ab-bd89ed866fa0,2512197,2174975,rodsmith/2553743
 12447,"Mostert, Raheem",Raheem Mostert,raheem mostert,RB,SF,2015,Purdue,28654,b040e601-ec40-4757-bf3d-71bf64ef99cf,2576414,2174957,raheemmostert/2553728
@@ -399,7 +374,6 @@ id,name,first_last,standard_name,position,team,draft_year,college,stats_id,sport
 12845,"Washington, Dwayne",Dwayne Washington,dwayne washington,RB,NO,2016,Washington,29470,30ff46bc-a039-4af7-9050-81af98901a3e,3002265,2061078,
 12857,"Washington, DeAndre",DeAndre Washington,deandre washington,RB,MIA,2016,Texas Tech,29377,c7b7d27f-97c3-4c12-95c4-36205175c959,2577654,1860934,
 12859,"Anderson, Stephen",Stephen Anderson,stephen anderson,TE,LAC,2016,California,29789,5cb0bf9c-03b4-4201-97c5-a59c6db50841,2576854,1880821,
-12860,"Fairbairn, Ka'imi",Ka'imi Fairbairn,kaimi fairbairn,PK,HOU,2016,UCLA,29792,203b60aa-cb94-499c-a4ca-d3c6b94dddc4,2971573,1996562,
 12868,"Braunecker, Ben",Ben Braunecker,ben braunecker,TE,FA,2016,Harvard,29913,d76c8e95-7c6e-4def-9fd9-d813df18b3b8,2969241,1994904,
 12871,"Foster, D.J.",D.J. Foster,dj foster,RB,ARI,2016,Arizona State,29872,39d12962-65a4-4107-8924-56f48fce31ef,2978124,1984096,
 12873,"Jones, Andy",Andy Jones,andy jones,WR,FA,2016,Jacksonville,29893,c57b1184-e381-40cc-b603-f703e10d3fad,2982761,2011037,
@@ -416,7 +390,6 @@ id,name,first_last,standard_name,position,team,draft_year,college,stats_id,sport
 12930,"Anderson, Robby",Robby Anderson,robby anderson,WR,CAR,2016,Temple,29785,e81fb788-1478-4936-ae12-f6ed7ec23476,,1886746,
 12934,"Rogers, Chester",Chester Rogers,chester rogers,WR,TEN,2016,Grambling State,29609,958c9833-2e55-411a-8e0e-ecc229bbeb14,,2010688,
 12955,"Manhertz, Chris",Chris Manhertz,chris manhertz,TE,CAR,2016,Canisius,28365,7c7b5515-7786-4e24-9ce0-34e6a8bd5727,,2167520,
-12956,"Lutz, Wil",Wil Lutz,wil lutz,PK,NO,2016,Georgia State,29754,c4cf84d0-6022-4ac1-a9ba-85587921c53f,,2008545,
 13044,"Lengel, Matt",Matt Lengel,matt lengel,TE,FA,2015,Eastern Kentucky,28975,4d747b73-bcc6-46d2-a2d7-ec1d0c8135a2,,2174840,
 13057,"Carson, Tra",Tra Carson,tra carson,RB,FA,2016,Texas A&M,29700,ba36a4bb-5cc4-4113-9b5d-32bab02ef966,,1880848,
 13065,"Tomlinson, Eric",Eric Tomlinson,eric tomlinson,TE,BAL,2015,UTEP,28658,b3d7169b-9cf6-4fea-815a-26e4fb0ec16a,,1759992,
@@ -483,7 +456,6 @@ id,name,first_last,standard_name,position,team,draft_year,college,stats_id,sport
 13238,"Davis, Robert",Robert Davis,robert davis,WR,FA,2017,Georgia State,30322,d0879c68-6387-4edc-b55b-07e128546ae7,,2818352,
 13239,"Penny, Elijhaa",Elijhaa Penny,elijhaa penny,RB,NYG,2016,Idaho,29906,6c6a6099-0169-4c9a-b024-0d8f4a795f38,,2237090,
 13240,"Hill, Brian",Brian Hill,brian hill,RB,ATL,2017,Wyoming,30269,26873576-2bbd-4622-bc3e-ec847577855b,,2131960,
-13241,"Rosas, Aldrick",Aldrick Rosas,aldrick rosas,PK,JAC,2016,Southern Oregon,29949,8fb2ca06-3d13-4552-98e0-7b913b4ab5b9,,2237139,
 13246,"Alie-Cox, Mo",Mo Alie-Cox,mo aliecox,TE,IND,2017,Virginia Commonwealth,30112,8809c0dd-786b-4255-a7d0-333c9498c19a,,2815925,moalie-cox/2558832
 13254,"Shaheen, Adam",Adam Shaheen,adam shaheen,TE,MIA,2017,Ashland,30158,87171077-4c1c-4b67-b159-2cc6242988e0,,2818105,
 13277,"Golladay, Kenny",Kenny Golladay,kenny golladay,WR,DET,2017,Northern Illinois,30209,659d31a3-9c62-4e3d-a0ea-b2e4967d6947,,2005894,
@@ -491,7 +463,6 @@ id,name,first_last,standard_name,position,team,draft_year,college,stats_id,sport
 13289,"Hollins, Mack",Mack Hollins,mack hollins,WR,MIA,2017,North Carolina,30231,93cb5790-1012-4c42-bccb-5748c27ba7d6,,2010349,
 13290,"Cohen, Tarik",Tarik Cohen,tarik cohen,RB,CHI,2017,North Carolina A&T,30232,a8342d20-9901-49a6-bc45-79f192418188,,2091113,
 13299,"Kittle, George",George Kittle,george kittle,TE,SF,2017,Iowa,30259,2ada91b0-036e-454f-83c3-6d939ff584a9,,2818265,
-13303,"Elliott, Jake",Jake Elliott,jake elliott,PK,PHI,2017,Memphis,30266,059e5bb7-1842-4558-9aaf-77c352a21216,,2080295,
 13308,"Agnew, Jamal",Jamal Agnew,jamal agnew,WR,DET,2017,San Diego,30278,c871b3a8-72c4-425e-a357-2de37e033c8d,,2818264,
 13313,"McKenzie, Isaiah",Isaiah McKenzie,isaiah mckenzie,WR,BUF,2017,Georgia,30285,6130be96-edf3-4361-b666-860c4ec46e7d,,2131587,
 13315,"Saubert, Eric",Eric Saubert,eric saubert,TE,JAC,2017,Drake,30287,582dc00e-e7ec-4ca7-bff0-f7b1d604017b,,2001018,
@@ -499,9 +470,7 @@ id,name,first_last,standard_name,position,team,draft_year,college,stats_id,sport
 13319,"Jones, Aaron",Aaron Jones,aaron jones,RB,GB,2017,UTEP,30295,27dd5b6e-ea65-4622-a6b4-460fd144407c,,2071937,
 13326,"Armah, Alexander",Alexander Armah,alexander armah,RB,CAR,2017,West Georgia,30305,686cab35-6da0-4e10-ba65-0d1f97e0bc8b,,2818312,
 13334,"Henderson, De'Angelo",De'Angelo Henderson,deangelo henderson,RB,FA,2017,Coastal Carolina,30319,294b247f-c8b9-4fe7-9fce-bb4011fff02f,,2818315,
-13347,"Gonzalez, Zane",Zane Gonzalez,zane gonzalez,PK,ARI,2017,Arizona State,30337,cd0f4ef0-9914-4125-be4d-804a72350ceb,,2061033,
 13348,"Moore, David",David Moore,david moore,WR,SEA,2017,East Central,30339,aecc1809-4628-4c3a-8b2b-c8f2858d2492,,2818351,
-13354,"Butker, Harrison",Harrison Butker,harrison butker,PK,KC,2017,Georgia Tech,30346,4ceb866c-8eaf-49b5-9043-56228e43a2e5,,2078888,
 13364,"Carson, Chris",Chris Carson,chris carson,RB,SEA,2017,Oklahoma State,30362,0afca88b-83e7-49d6-80df-1f68b21cca9f,,2185541,
 13366,"Schreck, Mason",Mason Schreck,mason schreck,TE,CIN,2017,Buffalo,30364,ca6c7b35-6ae1-4ba7-ae98-1f26174e407d,,2818374,
 13367,"Carr, Austin",Austin Carr,austin carr,WR,FA,2017,Northwestern,30656,4316bbf5-0d02-4392-9fbc-33be86f87446,,2818959,
@@ -517,7 +486,6 @@ id,name,first_last,standard_name,position,team,draft_year,college,stats_id,sport
 13391,"Hollister, Jacob",Jacob Hollister,jacob hollister,TE,SEA,2017,Wyoming,30661,ad2a1d03-020b-487a-bd5f-7ca9fbc250fe,,2818962,
 13396,"Daniels, Darrell",Darrell Daniels,darrell daniels,TE,ARI,2016,Washington,30523,7574eb56-a34a-419e-9682-c4788cfe2019,,2079698,
 13398,"White, Tim",Tim White,tim white,WR,FA,2017,Arizona State,30510,4592fc87-9864-452d-8a19-5d4df714658f,,2818914,
-13403,"Koo, Younghoe",Younghoe Koo,younghoe koo,PK,ATL,2017,Georgia Southern,30426,a8c79523-3d0e-48dd-b4c6-e3d8afd24a13,,2820093,
 13404,"Ekeler, Austin",Austin Ekeler,austin ekeler,RB,LAC,2017,Western State,30423,e5b8c439-a48a-4f83-b63b-1a4d30e04cd3,,2820090,
 13406,"Adeboyejo, Quincy",Quincy Adeboyejo,quincy adeboyejo,WR,NE,2017,Mississippi,30512,5f5fd1a9-1085-404b-a978-426a8895fb83,,2079880,
 13411,"Swoopes, Tyrone",Tyrone Swoopes,tyrone swoopes,TE,WAS,2017,Texas,30763,2aa9cc15-bd17-4e53-bfcd-17a2fb1a2170,,2820103,
@@ -537,7 +505,6 @@ id,name,first_last,standard_name,position,team,draft_year,college,stats_id,sport
 13510,"Mickens, Jaydon",Jaydon Mickens,jaydon mickens,WR,TB,2016,Washington,29978,a0498a95-9dc3-4df5-8f51-a1564fb3de57,,2237679,
 13529,"Natson, JoJo",JoJo Natson,jojo natson,WR,CLE,2016,Akron,30531,2d52ede5-1c65-4f18-a8ac-9306192ef625,,2818702,
 13544,"Wilson, Bobo",Bobo Wilson,bobo wilson,WR,FA,2017,Florida State,30481,ee8800ba-af54-4d69-9182-63fd0f789551,,2071519,
-13564,"Ficken, Sam",Sam Ficken,sam ficken,PK,NYJ,2015,Penn State,30038,f61e6429-3f9b-478c-8697-e00fe813ce9c,,1889916,
 13585,"Zylstra, Brandon",Brandon Zylstra,brandon zylstra,WR,CAR,2018,Concordia,30959,3885b40b-c31b-4cd6-a0fd-3d24bede2771,,2914676,
 13589,"Allen, Josh",Josh Allen,josh allen,QB,BUF,2018,Wyoming,30977,3069db07-aa43-4503-ab11-2ae5c0002721,,2181054,
 13590,"Mayfield, Baker",Baker Mayfield,baker mayfield,QB,CLE,2018,Oklahoma,30971,30198d30-9769-4e10-ac86-b4c91d940802,,2080032,
@@ -611,8 +578,6 @@ id,name,first_last,standard_name,position,team,draft_year,college,stats_id,sport
 13678,"Thomas, Ian",Ian Thomas,ian thomas,TE,CAR,2018,Indiana,31071,ed8a8fd2-df67-45e7-a34f-984afb82f6ea,,2253359,
 13679,"Herndon, Chris",Chris Herndon,chris herndon,TE,NYJ,2018,Miami,31077,780a48de-d092-4e87-9c34-8d1b45a154cc,,2136463,
 13680,"Hurst, Hayden",Hayden Hurst,hayden hurst,TE,ATL,2018,South Carolina,30995,1b125fc4-5dd9-4eb9-a42f-048e61ca42b7,,2185053,
-13718,"Carlson, Daniel",Daniel Carlson,daniel carlson,PK,LVR,2018,Auburn,31137,7bb70550-c28a-4e47-9a13-cc0c0fef8b38,,2079862,
-13719,"Pineiro, Eddy",Eddy Pineiro,eddy pineiro,PK,CHI,2018,Florida,31482,1c50997f-c56e-47f9-a750-33ab100ed28b,,2221833,
 13722,"Jarwin, Blake",Blake Jarwin,blake jarwin,TE,DAL,2017,Oklahoma State,30784,43e8a6ac-d451-4dbd-b145-797764f91494,,2819999,
 13724,"James, Richie",Richie James,richie james,WR,SF,2018,Middle Tennessee State,31210,4aae1781-1eec-48c0-b41f-e4fee61c3c32,,2132282,
 13726,"Edmonds, Chase",Chase Edmonds,chase edmonds,RB,ARI,2018,Fordham,31104,d8d9b161-7ef4-42bf-89b7-7edf806a0ad1,,2137507,
@@ -631,7 +596,6 @@ id,name,first_last,standard_name,position,team,draft_year,college,stats_id,sport
 13819,"Thomas, Jordan",Jordan Thomas,jordan thomas,TE,IND,2018,Mississippi State,31181,f993832a-f81f-4706-90b8-80fd193bdfd7,,2249166,
 13824,"Etling, Danny",Danny Etling,danny etling,QB,SEA,2018,LSU,31189,e2104140-4ce0-42a8-8b00-346b4a9258b2,,2060804,
 13825,"McGough, Alex",Alex McGough,alex mcgough,QB,SEA,2018,Florida International,31190,b47fe0b2-e002-42a7-ab84-4b9e61adc9e3,,2132602,
-13832,"Sanders, Jason",Jason Sanders,jason sanders,PK,MIA,2018,New Mexico,31199,5ffb654f-0de5-424b-aa2f-ad511deb5b51,,2131909,
 13838,"Bawden, Nick",Nick Bawden,nick bawden,RB,DET,2018,San Diego State,31207,452520cc-4921-47f1-8d6a-55f7cee8bb0c,,2131912,
 13846,"Woodside, Logan",Logan Woodside,logan woodside,QB,TEN,2018,Toledo,31219,ddff375b-365e-4af1-b9ae-58d03b1b1195,,2060999,
 13847,"Izzo, Ryan",Ryan Izzo,ryan izzo,TE,NE,2018,Florida State,31220,40b8fa44-b289-42dd-9606-a1ae30adc7bc,,2138988,
@@ -646,7 +610,6 @@ id,name,first_last,standard_name,position,team,draft_year,college,stats_id,sport
 13871,"Hilliard, Dontrell",Dontrell Hilliard,dontrell hilliard,RB,HOU,2018,Tulane,31457,ef21feb3-991e-42d7-bb16-8bc92f7894bf,,2925536,
 13873,"Boyle, Tim",Tim Boyle,tim boyle,QB,GB,2018,Eastern Kentucky,31431,d897b70f-29d9-477e-a72a-c9bfbadb70d3,,2071997,
 13874,"Wilson, Shaun",Shaun Wilson,shaun wilson,RB,FA,2018,Duke,31278,3d36bdab-2521-44da-8ede-30226510c2b0,,2926610,
-13877,"Vedvik, Kaare",Kaare Vedvik,kaare vedvik,PK,FA,2018,Marshall,31421,622c2cf0-a29e-4943-8819-f9dc48f3d7a0,,2132369,
 13878,"Board, C.J.",C.J. Board,cj board,WR,NYG,2017,Chattanooga,30513,8db3a609-73f4-4797-ae22-8adf024d473c,,2818904,
 13879,"Allen, Kyle",Kyle Allen,kyle allen,QB,WAS,2018,Houston,31301,d2023f5b-f73b-43ad-a816-f10dadfdfaed,,2131782,
 13880,"Arnold, Dan",Dan Arnold,dan arnold,TE,ARI,2017,Wisconsin-Platteville,30891,d479a777-b53b-4bbf-a8e4-0c1675ac48df,,2835170,
@@ -655,9 +618,6 @@ id,name,first_last,standard_name,position,team,draft_year,college,stats_id,sport
 13890,"Croom, Jason",Jason Croom,jason croom,TE,PHI,2017,Tennessee,30594,e17b5817-d955-42be-bb8d-e34d89f6dd71,,2819968,
 13893,"Sherfield, Trent",Trent Sherfield,trent sherfield,WR,ARI,2018,Vanderbilt,31320,18ccb826-5584-4f6a-8434-cf9a3b927b0f,,2139758,
 13895,"Sims, Cam",Cam Sims,cam sims,WR,WAS,2018,Alabama,31405,f4f11bc2-2fe6-4da8-a83c-63085788e789,,2925163,
-13898,"Joseph, Greg",Greg Joseph,greg joseph,PK,FA,2018,Florida Atlantic,31538,a2aab80d-174c-4639-beac-e2b70bb3625f,,2926810,
-13900,"Bertolet, Taylor",Taylor Bertolet,taylor bertolet,PK,FA,2017,Texas A&M,29712,63e63ae6-5a88-4b04-a3a0-5e0cb0404f95,,,
-13909,"Maher, Brett",Brett Maher,brett maher,PK,ARI,2017,Nebraska,27369,99c9de87-7fe1-4d5e-928e-586f48af2d79,,1630817,
 13910,"Powell, Brandon",Brandon Powell,brandon powell,WR,ATL,2018,Florida,31641,5ec01774-4a79-40aa-be4a-e33c71bd5bf4,,2926490,
 13911,"Willies, Derrick",Derrick Willies,derrick willies,WR,CLE,2018,Texas Tech,31462,bdeddbb2-2b56-4b46-915b-19eb71fbbe45,,2925538,
 13912,"Batson, Cameron",Cameron Batson,cameron batson,WR,TEN,2018,Texas Tech,31623,54c60acc-65ac-4e63-a988-697ee26e862a,,2926801,
@@ -668,7 +628,6 @@ id,name,first_last,standard_name,position,team,draft_year,college,stats_id,sport
 13961,"Dawkins, Dalyn",Dalyn Dawkins,dalyn dawkins,RB,FA,2018,Colorado State,31620,12c39c1f-d579-4bd5-b736-62afd23b8208,,2926802,
 13963,"Hodge, KhaDarel",KhaDarel Hodge,khadarel hodge,WR,CLE,2018,Prairie View A&M,31769,6f124753-5c6c-454b-97c7-0f9b4d14e7c2,,2954080,
 13968,"Mullens, Nick",Nick Mullens,nick mullens,QB,SF,2017,Southern Miss,30563,7738fea8-7ea2-4c4c-b589-bca90b070819,,2819104,
-13980,"Badgley, Mike",Mike Badgley,mike badgley,PK,LAC,2018,Miami (FL),31366,375b0d7f-8d03-4111-8c1b-62907f0326a1,,2925140,
 13988,"Dwelley, Ross",Ross Dwelley,ross dwelley,TE,SF,2018,San Diego,31329,70473218-5ae3-47b4-86fd-151e68f1e8b9,,2924888,
 13990,"Scott, Da'Mari",Da'Mari Scott,damari scott,WR,NYG,2018,Fresno State,31460,aec7472c-3e0b-443f-8c48-cd8cf0e9734c,,2925416,
 13994,"Brown, Pharaoh",Pharaoh Brown,pharaoh brown,TE,HOU,2017,Oregon,30627,6733b953-de77-44e5-acbf-c2d3a0940243,,2819155,
@@ -768,8 +727,6 @@ id,name,first_last,standard_name,position,team,draft_year,college,stats_id,sport
 14231,"Wesco, Trevon",Trevon Wesco,trevon wesco,TE,NYJ,2019,West Virginia,31953,f6c34178-e063-444b-96b3-df6b3cf66419,,2243366,
 14239,"Moreau, Foster",Foster Moreau,foster moreau,TE,LVR,2019,LSU,31969,9c3a67fd-5c6e-4689-9e08-9ff6d4db6c9a,,2180634,
 14240,"Gentry, Zach",Zach Gentry,zach gentry,TE,PIT,2019,Michigan,31973,58f18567-a050-49c4-aeca-b34499338b37,,2185708,
-14244,"Gay, Matt",Matt Gay,matt gay,PK,LAR,2019,Utah,31977,2b90e091-ef78-4753-93eb-0acf3632c206,,2870511,
-14258,"Seibert, Austin",Austin Seibert,austin seibert,PK,CIN,2019,Oklahoma,32002,bd1f047a-978f-4643-b55f-f4d3b0719a4e,,2179668,
 14265,"Fulgham, Travis",Travis Fulgham,travis fulgham,WR,PHI,2019,Old Dominion,32016,030f3ecf-f32f-497d-96a8-8f28d44fc311,,2143075,
 14267,"Winfree, Juwann",Juwann Winfree,juwann winfree,WR,GB,2019,Colorado,32019,fa7bdbe5-23b9-4cba-9015-98c5e2d09c9e,,3116589,
 14277,"Green, Marcus",Marcus Green,marcus green,WR,FA,2019,Louisiana-Monroe,32035,3ca39a84-5ba9-445d-bf6e-895be06edb34,,2181212,
@@ -797,7 +754,6 @@ id,name,first_last,standard_name,position,team,draft_year,college,stats_id,sport
 14331,"Johnson, D'Ernest",D'Ernest Johnson,dernest johnson,RB,CLE,2019,South Florida,32608,f46e812f-14c6-4af8-9316-01a880adebc5,,3117165,
 14332,"Conrad, C.J.",C.J. Conrad,cj conrad,TE,FA,2019,Kentucky,32352,16551ae2-a27c-4c2d-aa48-0fce4fde68a8,,2180481,
 14333,"Hills, Wes",Wes Hills,wes hills,RB,FA,2019,Slippery Rock,32473,14e3c57f-0eb2-49b5-9e94-10a4a54990cf,,2132445,
-14335,"Fry, Elliott",Elliott Fry,elliott fry,PK,ATL,2019,South Carolina,31831,67da0db1-ed58-435d-b8bf-f7ffa02d8a24,,2079797,
 14336,"Johnson, Jon'Vea",Jon'Vea Johnson,jonvea johnson,WR,DAL,2019,Toledo,32200,bc67a9f0-8c96-4114-8b46-4c97fdd577d1,,2136691,
 14337,"Guyton, Jalen",Jalen Guyton,jalen guyton,WR,LAC,2019,North Texas,32201,ae9495b2-4c62-4e14-8e43-beb53e1ae28a,,2186663,
 14338,"Hilliman, Jon",Jon Hilliman,jon hilliman,RB,FA,2019,Rutgers,32238,6d882a8b-c34f-4de1-89d2-8ee71628e039,,3116824,
@@ -818,10 +774,7 @@ id,name,first_last,standard_name,position,team,draft_year,college,stats_id,sport
 14370,"Hudson, Tanner",Tanner Hudson,tanner hudson,TE,TB,2018,Southern Arkansas,31257,2fa75e05-cac4-4b40-8924-dbc9ae0c959c,,,
 14372,"Holtz, J.P.",J.P. Holtz,jp holtz,TE,CHI,2016,Pittsburgh,,8d3ac8d8-e18f-4485-acc6-55c79adcc2a8,,,
 14373,"Willis, Damion",Damion Willis,damion willis,WR,FA,2019,Troy,32471,967a20b1-e334-4ebb-a1b5-f46111ab7325,,3117021,
-14387,"Santoso, Ryan",Ryan Santoso,ryan santoso,PK,NYG,2018,Minnesota,31643,d58166e2-24ee-4dd2-ae22-36b05634eb6d,,,
-14419,"Brown, Jon",Jon Brown,jon brown,PK,FA,2016,Louisville,29915,1a59e864-5282-4d94-b678-8537d524e181,,,
 14420,"Ingold, Alec",Alec Ingold,alec ingold,RB,LVR,2019,Wisconsin,32344,7ade135c-0760-4548-b7d9-cf1174e2be33,,2183930,
-14426,"Wright, Matthew",Matthew Wright,matthew wright,PK,DET,2019,Central Florida,32174,f0c7de3c-9e8b-4c3d-b42f-985f29ce163f,,3116875,
 14435,"Bonnafon, Reggie",Reggie Bonnafon,reggie bonnafon,RB,CAR,2019,,31302,2d16fcef-89b8-4a92-844f-a92c4e20b5c9,,,
 14440,"Walker, Michael",Michael Walker,michael walker,WR,FA,2019,Boston College,32101,019f8019-2a29-4131-b6fb-ea32568c1fc8,,3117047,
 14450,"Davis, Felton",Felton Davis,felton davis,WR,FA,2019,Michigan State,32356,c64e0229-181c-4a4d-9994-4501b09cd646,,2186422,
@@ -849,15 +802,12 @@ id,name,first_last,standard_name,position,team,draft_year,college,stats_id,sport
 14565,"Spencer, Diontae",Diontae Spencer,diontae spencer,WR,DEN,2014,McNeese State,,379f98b1-2f12-4f9e-8332-61cb930ac97a,,,
 14591,"Lovett, John",John Lovett,john lovett,TE,GB,2019,Princeton,32364,fbaa74ff-f6d3-4bbc-bdc1-12aae7fae484,,3116861,
 14592,"Zaccheaus, Olamide",Olamide Zaccheaus,olamide zaccheaus,WR,ATL,2019,Virginia,32123,d8281390-f081-41e5-b55e-75779536fe94,,2186266,
-14600,"Slye, Joey",Joey Slye,joey slye,PK,CAR,2019,Virginia Tech,32384,ef4998e0-c9ef-4afe-88ab-d09b48975a08,,3116871,
 14612,"Laird, Patrick",Patrick Laird,patrick laird,RB,MIA,2019,California,32439,5c424ecf-07c8-471e-a400-8d5f834af2e0,,2139562,
 14613,"Sims, Steven",Steven Sims,steven sims,WR,WAS,2019,Kansas,32187,4a213e4e-b0ba-4124-833e-33c528bd5908,,3116703,
 14618,"Hodges, Devlin",Devlin Hodges,devlin hodges,QB,LAR,2019,Samford,32581,a577ef90-17c3-4dbf-b6b8-e054f21a778d,,3117128,
 14622,"Ta'amu, Jordan",Jordan Ta'amu,jordan taamu,QB,KC,2019,Mississippi,32642,c14f8faa-62db-4fb2-a7b1-d9b5998ce604,,,
-14650,"Vizcaino, Tristan",Tristan Vizcaino,tristan vizcaino,PK,FA,2019,Washington,31808,cefd0600-93f2-4e0f-9624-81e3dc495c1d,,3103638,
 14654,"Hentges, Hale",Hale Hentges,hale hentges,TE,MIN,2019,Alabama,32295,fe7dea44-fd21-45e4-a8f0-1436e1108da1,,3116798,
 14665,"Dillon, Brandon",Brandon Dillon,brandon dillon,TE,MIN,2019,"Marian, Ind.",32142,c1576aca-1bd1-4b9f-ba83-10235f1e2eca,,,
-14717,"McLaughlin, Chase",Chase McLaughlin,chase mclaughlin,PK,NYJ,2019,Illinois,32417,12d28404-63e1-432f-adde-c93631a5c39c,,2165272,
 14727,"Reynolds, Craig",Craig Reynolds,craig reynolds,RB,JAC,2019,Kutztown,32596,0deb1dc9-0945-470d-8352-220d26d03d7d,,,
 14752,"Horsted, Jesper",Jesper Horsted,jesper horsted,TE,CHI,2019,Princeton,32576,48c56733-6644-42ee-9020-07bd2deba1ad,,,
 14760,"Gafford, Rico",Rico Gafford,rico gafford,WR,ARI,2018,Wyoming,31607,f7365f88-4cd0-42e9-9e4e-7bade08e9e5b,,,
@@ -961,19 +911,14 @@ id,name,first_last,standard_name,position,team,draft_year,college,stats_id,sport
 14874,"Bryant, Hunter",Hunter Bryant,hunter bryant,TE,DET,2020,Washington,33186,826c6c22-2a3a-48bb-befb-8e552fb391ea,,2815166,
 14875,"Bryant, Harrison",Harrison Bryant,harrison bryant,TE,CLE,2020,Florida Atlantic,32785,f58a5899-8b78-46e8-a29a-ba6273b7d872,,2241240,
 14876,"Deguara, Josiah",Josiah Deguara,josiah deguara,TE,GB,2020,Cincinnati,32764,7874d188-0fcd-4af9-9289-27c27e2bbd16,,2181108,
-14912,"Blankenship, Rodrigo",Rodrigo Blankenship,rodrigo blankenship,PK,IND,2020,Georgia,33211,c8bbff7b-3b6e-413f-8945-24c01bfd84c5,,2183949,
-14914,"Hajrullahu, Lirim",Lirim Hajrullahu,lirim hajrullahu,PK,CAR,2019,Western Ontario,32668,5a09de36-5fac-4053-b3a0-2b56d2519a9b,,,
-14915,"MacGinnis, Austin",Austin MacGinnis,austin macginnis,PK,LAR,2019,Kentucky,32667,7f97446b-4e10-4b1d-b68c-9b1bc7f1c85f,,,
 14917,"Patrick, Jacques",Jacques Patrick,jacques patrick,RB,CIN,2019,Florida State,32669,e2f3af7f-dd17-44f2-a000-d487a29f0f03,,,
 14936,"Asiasi, Devin",Devin Asiasi,devin asiasi,TE,NE,2020,UCLA,32761,05e15d81-6bb1-49f7-b677-63475d073961,,2260483,
 14939,"Keene, Dalton",Dalton Keene,dalton keene,TE,NE,2020,Virginia Tech,32771,4da5e05d-fc5c-4e87-aa38-d9cde42dd476,,2805113,
-14965,"Rohrwasser, Justin",Justin Rohrwasser,justin rohrwasser,PK,NE,2020,Marshall,32829,f8788fca-16b2-4214-b0a4-1bacff5e9fcd,,2194734,
 14969,"Hightower, John",John Hightower,john hightower,WR,PHI,2020,Boise State,32838,58e217cd-53c0-40e7-b40b-62f53d246751,,2969061,
 14972,"Coulter, Isaiah",Isaiah Coulter,isaiah coulter,WR,HOU,2020,Rhode Island,32841,0063fe36-d8c2-43e6-8ab1-af890eb58cea,,2830035,
 14973,"Huntley, Jason",Jason Huntley,jason huntley,RB,PHI,2020,New Mexico State,32842,632f863e-ad20-424f-a468-7ee40c098c2c,,2239939,
 14974,"Mooney, Darnell",Darnell Mooney,darnell mooney,WR,CHI,2020,Tulane,32843,bafe8df1-66b5-4200-8fb3-ff188c25a4e2,,2240651,
 14977,"Osborn, K.J.",K.J. Osborn,kj osborn,WR,MIN,2020,Miami,32846,3bf5c049-9daa-43ba-9758-c6c895a9d462,,2184383,
-14983,"Bass, Tyler",Tyler Bass,tyler bass,PK,BUF,2020,Georgia Southern,32858,bfccbff4-bc01-41ed-aa11-be976160504c,,2188356,
 14984,"Woerner, Charlie",Charlie Woerner,charlie woerner,TE,SF,2020,Georgia,32860,527dfee0-a242-4dc7-830a-ab7028308259,,2248629,
 14992,"Watkins, Quez",Quez Watkins,quez watkins,WR,PHI,2020,Southern Mississippi,32870,ca85137c-205c-458e-8b77-8457849f614c,,2262953,
 14996,"Davis, Tyler",Tyler Davis,tyler davis,TE,JAC,2020,Georgia Tech,32876,e7a9186e-5e19-4f70-b45c-527c888e6fc7,,2182811,
@@ -982,7 +927,6 @@ id,name,first_last,standard_name,position,team,draft_year,college,stats_id,sport
 15017,"Stevens, Tommy",Tommy Stevens,tommy stevens,QB,CAR,2020,Mississippi State,32910,93a1f2fd-fd5e-4b06-8086-476028d83eed,,2179839,
 15021,"Calais, Raymond",Raymond Calais,raymond calais,RB,LAR,2020,Louisiana-Lafayette,32915,748d5fdf-8a06-4cc1-a8b1-257f4377236a,,2252175,
 15022,"Perry, Malcolm",Malcolm Perry,malcolm perry,RB,MIA,2020,Navy,32916,73236a66-ba10-44a6-b12f-2ca13cad33b4,,2251971,
-15024,"Sloman, Sam",Sam Sloman,sam sloman,PK,TEN,2020,"Miami, O.",32918,e44cc736-fe98-4b80-a138-4ebc5f087335,,2240109,
 15026,"Sullivan, Stephen",Stephen Sullivan,stephen sullivan,TE,CAR,2020,Louisiana State,32921,a41b8454-0326-4c56-87a2-f2aac3814961,,2223251,
 15027,"Cleveland, Tyrie",Tyrie Cleveland,tyrie cleveland,WR,DEN,2020,Florida,32922,8cd3d1bb-5b04-4351-bd03-4b4f9b9e33e4,,2248604,
 15033,"Begelton, Reggie",Reggie Begelton,reggie begelton,WR,GB,2019,Lamar,32664,6fb8803e-2a84-454b-827f-df747e9157d8,,3157671,
@@ -1011,7 +955,6 @@ id,name,first_last,standard_name,position,team,draft_year,college,stats_id,sport
 15066,"Wolf, Eli",Eli Wolf,eli wolf,TE,BAL,2020,Georgia,33007,71c657d6-a2d9-48f3-b6db-dd4372e910f4,,,
 15069,"Fuller, Aaron",Aaron Fuller,aaron fuller,WR,SEA,2020,Washington,33267,df2caa7b-29f4-4391-8ce0-b1b711196379,,,
 15070,"Fortson, Jody",Jody Fortson,jody fortson,WR,FA,2019,Valdosta State,32600,a01ffd42-5fdb-42f8-95ab-157025e3fba8,,,
-15075,"McCann, Tucker",Tucker McCann,tucker mccann,PK,TEN,2020,Missouri,33343,397901eb-5589-4f0e-8c02-f50509e22f3c,,,
 15077,"Wright, Isaiah",Isaiah Wright,isaiah wright,WR,WAS,2020,Temple,33209,af534c7d-791e-4b7f-900d-2d8fd47c0d2a,,,
 15080,"Togiai, Noah",Noah Togiai,noah togiai,TE,IND,2020,Oregon State,32970,86707c8e-fec4-4ebe-9111-4d3ad238ad43,,,
 15087,"Cottrell, Nathan",Nathan Cottrell,nathan cottrell,RB,JAC,2020,Georgia Tech,33123,bc43e18a-c2f9-4e49-a90c-41a95cffa736,,,
@@ -1021,15 +964,12 @@ id,name,first_last,standard_name,position,team,draft_year,college,stats_id,sport
 15098,"Bradwell, Darius",Darius Bradwell,darius bradwell,RB,LAC,2020,Tulane,32975,06f3e98d-7d73-4007-b673-4a74ed72bda3,,,
 15103,"Gilliam, Reggie",Reggie Gilliam,reggie gilliam,TE,BUF,2020,Toledo,33357,4475bb8a-b5a6-4527-bfc7-8e7e03900984,,,
 15109,"Westbrook, Nick",Nick Westbrook,nick westbrook,WR,TEN,2020,Indiana,33348,5e63e674-adf3-4f4e-929e-4a0ff2cfb1df,,,
-15111,"Wright, Brandon",Brandon Wright,brandon wright,PK,LAR,2020,Georgia State,33149,61980614-1609-4b68-b11f-05aa30fefb89,,,
 15116,"Zuber, Isaiah",Isaiah Zuber,isaiah zuber,WR,NE,2020,Mississippi State,33020,e83c7957-58c7-48eb-aaf2-47e410607957,,,
 15123,"Thompson, Colin",Colin Thompson,colin thompson,TE,CAR,2017,Temple,30740,1d55ba37-c09e-4945-b7ae-8d84e2357283,,,
 15149,"Harris, De'Michael",De'Michael Harris,demichael harris,WR,IND,2020,Southern Mississippi,33215,18a3fb57-3220-4fa3-af42-20e179ec896f,,,
-15154,"Castillo, Sergio",Sergio Castillo,sergio castillo,PK,FA,2014,West Texas A&amp;M,28300,1f2c7574-f56a-47b3-bd75-5dd0d5ff8d93,,,
 15156,"Brown, Tony",Tony Brown,tony brown,WR,WAS,2020,Colorado,33303,eb626cc4-10ec-4385-933e-eea81e2dbfbc,,,
 15172,"Olonilua, Sewo",Sewo Olonilua,sewo olonilua,RB,DAL,2020,Texas Christian,33099,fb48038c-8f33-47a5-abb4-cda19f66c853,,,
 15183,"Hinton, Kendall",Kendall Hinton,kendall hinton,QB,DEN,2020,Wake Forest,32929,0830e644-2d6e-446b-9da6-57d7e3472fcd,,,
-15200,"Russolino, Taylor",Taylor Russolino,taylor russolino,PK,DEN,2019,Millsaps,33372,52766d25-2e8b-408f-ba3c-2ef9c3d082dc,,,
 15206,"Bradley, Ja'Marcus",Ja'Marcus Bradley,jamarcus bradley,WR,CLE,2020,Louisiana-Lafayette,33302,f1236815-5ed7-4bab-808f-700c4516fd7d,,,
 15213,"Sokol, Matt",Matt Sokol,matt sokol,TE,LAC,2019,Michigan State,32551,21a33144-63ee-4125-ac44-3fc911a39d50,,,
 15214,"Dafney, Dominique",Dominique Dafney,dominique dafney,TE,GB,2020,Indiana State,33367,921d49c2-64d1-4108-a3a3-0c237e17748a,,,

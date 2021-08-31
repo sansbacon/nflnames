@@ -3,9 +3,10 @@
 # Copyright (C) 2020 Eric Truett
 # Licensed under the MIT License
 
+from functools import lru_cache
 from pathlib import Path
 import re
-from typing import List, Tuple
+from typing import Iterable, Set, Tuple, Union
 
 import pandas as pd
 from rapidfuzz import process, fuzz
@@ -19,7 +20,21 @@ LOWER_SUFFIXES = set([s.lower() for s in SUFFIXES])
 KNOWN_DUPS = {'Michael Thomas', 'Ryan Griffin', 'Chris Jones', 'David Long', 'Tony Brown', 'Brandon Williams', 'Lamar Jackson', 'Josh Allen'}
 
 
-def master_player_records():
+def _explode(s: pd.Series) -> pd.DataFrame:
+    """Explodes series into individual columns
+    
+    Args:
+        s (pd.Series): pandas series
+
+    Returns:
+        pd.DataFrame
+
+    """
+    return pd.DataFrame(s.tolist(), index=s.index)
+
+
+@lru_cache(maxsize=None)
+def master_player_records() -> pd.DataFrame:
     """The master player records
     
     Returns:
@@ -29,7 +44,7 @@ def master_player_records():
     return pd.read_csv(MASTER_PLAYERS)    
 
 
-def match_name(match: str, match_from: List[str]) -> Tuple[str, int]:
+def match_name(match: str, match_from: Iterable[str]) -> Tuple[str, int]:
     """Finds best match from list of names
     
     Args:
@@ -56,12 +71,12 @@ def rearrange_name(s: str) -> str:
     return ' '.join(reversed([i.strip() for i in s.split(', ')]))
 
 
-def remove_chars(s, keep=LEGAL_CHARS):
+def remove_chars(s: str, keep: Union[str, re.Pattern] = LEGAL_CHARS) -> str:
     """Removes all but legal characters from string"""
     return ' '.join([re.sub(keep, '', i) for i in s.split()])
 
 
-def remove_suffixes(s, remove=LOWER_SUFFIXES):
+def remove_suffixes(s: str, remove: Set[str] = LOWER_SUFFIXES) -> str:
     """Removes suffixes from string"""
     s = s.split()
     if s[-1].lower() in remove:
@@ -105,6 +120,6 @@ def standardize_positions(s: str) -> str:
         str: the standardized string
 
     """
-    mapping = {'Def': 'DST', 'Defense': 'DST', 'DEF': 'DST', 'def': 'DST', 'dst': 'DST'}
+    mapping = {'Def': 'DST', 'Defense': 'DST', 'DEF': 'DST', 'def': 'DST', 'dst': 'DST', 'PK': 'K', 'Kicker': 'K'}
     std = mapping[s] if s in mapping else s
     return std
