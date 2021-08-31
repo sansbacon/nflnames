@@ -55,7 +55,8 @@ TEAM_CODES = {
   'SEA': ['Seattle Seahawks', 'Seahawks', 'Seattle', 'sea'],
   'TB': ['TBB', 'Tampa Bay Buccaneers', 'Buccaneers', 'TBO', 'tam', 'TAM', 'Tampa', 'Tampa Bay'],
   'TEN': ['TIT', 'Tennessee Titans', 'Titans', 'Tennessee', 'oti', 'ten'],
-  'WAS': ['WFT', 'Washington Redskins', 'Redskins', 'Washington', 'was', 'Football Team', 'Washington Football Team']
+  'WAS': ['WFT', 'Washington Redskins', 'Redskins', 'Washington', 'was', 'Football Team', 'Washington Football Team'],
+  'FA': ['FA', 'Free Agent', 'UNK', 'Unknown'],
 }
 
 
@@ -91,7 +92,7 @@ TEAM_NAMES = {
   'Seattle Seahawks': ['SEA', 'Seahawks', 'Seattle', 'sea'],
   'Tampa Bay Buccaneers': ['TB', 'Bucs', 'Buccaneers', 'TBO', 'tam', 'TAM', 'Tampa', 'Tampa Bay'],
   'Tennessee Titans': ['TEN', 'Titans', 'Tennessee', 'oti', 'ten'],
-  'Washington Football Team': ['WAS', 'Redskins', 'Washington', 'was', 'Washington Redskins']
+  'Washington Football Team': ['WAS', 'Redskins', 'Washington', 'was', 'Washington Redskins', 'Football Team', 'Washington FootballTeam']
 }
 
 
@@ -177,7 +178,8 @@ def standardize_team_code(team: str) -> str:
     """
     matches = _standardize(team, TEAM_CODES)
     if not matches:
-        raise ValueError(f'no match for {team}')
+        logging.warn(f'no match for {team}')
+        return team
     if len(matches) > 1:
         raise ValueError(f'too many matches for {team}:\n{matches}')    
     return matches[0][0]
@@ -195,7 +197,8 @@ def standardize_team_name(team: str) -> str:
     """
     matches = _standardize(team, TEAM_NAMES)
     if not matches:
-        raise ValueError(f'no match for {team}')
+        logging.warn(f'no match for {team}')
+        return team
     if len(matches) > 1:
         raise ValueError(f'too many matches for {team}:\n{matches}')    
     return matches[0][0]

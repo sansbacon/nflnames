@@ -3,17 +3,44 @@
 # Copyright (C) 2020 Eric Truett
 # Licensed under the MIT License
 
-from functools import lru_cache
 from pathlib import Path
 import re
-import string
+from typing import List, Tuple
 
 import pandas as pd
+from rapidfuzz import process, fuzz
 
 
+DATADIR = Path(__file__).parent / 'data'
+MASTER_PLAYERS = DATADIR / 'master_players.csv'
 LEGAL_CHARS = re.compile(r'\W')
 SUFFIXES = {'II', 'The Second', 'III', 'The Third', 'IV', 'The Fourth', 'Jr', 'Junior', 'Sr', 'Senior', 'Esq', 'JD', 'MD', 'PhD'}
 LOWER_SUFFIXES = set([s.lower() for s in SUFFIXES])
+KNOWN_DUPS = {'Michael Thomas', 'Ryan Griffin', 'Chris Jones', 'David Long', 'Tony Brown', 'Brandon Williams', 'Lamar Jackson', 'Josh Allen'}
+
+
+def master_player_records():
+    """The master player records
+    
+    Returns:
+        pd.DataFrame
+
+    """
+    return pd.read_csv(MASTER_PLAYERS)    
+
+
+def match_name(match: str, match_from: List[str]) -> Tuple[str, int]:
+    """Finds best match from list of names
+    
+    Args:
+        match (str): the name to match
+        match_from (List[str]): the names to match from
+
+    Returns:
+        Tuple[str, int]: the match and the confidence
+
+    """
+    return process.extractOne(match, match_from, scorer=fuzz.WRatio)
 
 
 def rearrange_name(s: str) -> str:
@@ -52,7 +79,7 @@ def standardize_defense_name(s: str) -> str:
         str: the standardized string
 
     """   
-    return ' '.join(standardize_player_name(s).split()[:-1]) + ' defense'
+    return standardize_player_name(s).split()[-1] + ' defense'
 
 
 def standardize_player_name(s: str) -> str:
